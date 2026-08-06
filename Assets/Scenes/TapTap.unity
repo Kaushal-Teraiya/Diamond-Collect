@@ -441,6 +441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YouLose
       objectReference: {fileID: 0}
+    - target: {fileID: 5960917925920611120, guid: 43bbec1878a5e7b4a87fa0f7580bbde9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -457,6 +461,10 @@ PrefabInstance:
     - target: {fileID: 4383814267013639774, guid: 8a93ea43e38e76d45ab0c01fabcc5e70, type: 3}
       propertyPath: m_Name
       value: FireborderUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383814267013639774, guid: 8a93ea43e38e76d45ab0c01fabcc5e70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4822442647822555152, guid: 8a93ea43e38e76d45ab0c01fabcc5e70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -856,6 +864,10 @@ PrefabInstance:
     - target: {fileID: 2264017223540079108, guid: 0a608c16bf2c70346a275fbfbf248525, type: 3}
       propertyPath: m_Name
       value: YouWin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264017223540079108, guid: 0a608c16bf2c70346a275fbfbf248525, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2771725986617404107, guid: 0a608c16bf2c70346a275fbfbf248525, type: 3}
       propertyPath: m_LocalPosition.x
