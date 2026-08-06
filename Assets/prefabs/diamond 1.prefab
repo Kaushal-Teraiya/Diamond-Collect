@@ -124,6 +124,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3946578582169737332}
     m_Modifications:
+    - target: {fileID: 3068468977419680187, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198000042729370535, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198000042729370535, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8365687349314154227, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
       propertyPath: m_Name
       value: DiamondPickup
@@ -189,6 +201,26 @@ PrefabInstance:
     - target: {fileID: 3415670383106441306, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
       propertyPath: m_Name
       value: DiamondAmbient
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
+      propertyPath: EmissionModule.m_BurstCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545767236287706278, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7736723748614028334, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
       propertyPath: m_LocalPosition.x

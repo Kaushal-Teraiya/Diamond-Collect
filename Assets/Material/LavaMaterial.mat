@@ -51,7 +51,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _CrackThresholdLow: -0.24
-    - _Crackdensity: 2.87
+    - _Crackdensity: 1.64
     - _DistortionStrength: 0.4
     - _GlowIntensity: 2.16
     - _NoiseScale: 20
