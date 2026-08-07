@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 3946578582169737332}
   - component: {fileID: 34560640899146683}
   - component: {fileID: 6546479159992418507}
+  - component: {fileID: 5407378648582162759}
+  - component: {fileID: 6097293931932357539}
+  - component: {fileID: 9061496218286041832}
   m_Layer: 0
   m_Name: diamond 1
   m_TagString: Untagged
@@ -28,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.97, y: -2.04, z: 0}
-  m_LocalScale: {x: 1.3829305, y: 1.4702752, z: 1.7232479}
+  m_LocalScale: {x: 2.76, y: 2.934319, z: 3.4391928}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2512526333958107092}
@@ -116,6 +119,81 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5407378648582162759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371348991651532169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ac6ccdea323cb469c63a4eb92d74d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!61 &6097293931932357539
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371348991651532169}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.4, y: 1.09}
+  m_EdgeRadius: 0
+--- !u!114 &9061496218286041832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371348991651532169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd2baae4412a3342afb24d8f6346b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Diamond
+  ambientParticles: {fileID: 8663224956820035476}
+  pickupEffect: {fileID: 6863115300856308707}
+  animator: {fileID: 6546479159992418507}
+  diamondColldier: {fileID: 6097293931932357539}
+  spriteRenderer: {fileID: 34560640899146683}
 --- !u!1001 &3385451940666396740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,18 +202,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3946578582169737332}
     m_Modifications:
-    - target: {fileID: 3068468977419680187, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8198000042729370535, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8198000042729370535, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8365687349314154227, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
       propertyPath: m_Name
       value: DiamondPickup
@@ -190,6 +256,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8424028944303154149, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
   m_PrefabInstance: {fileID: 3385451940666396740}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &6863115300856308707 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8198000042729370535, guid: 6a333b0b1692e9d42acfb873926f6e1c, type: 3}
+  m_PrefabInstance: {fileID: 3385451940666396740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5296255296456659962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,26 +272,6 @@ PrefabInstance:
     - target: {fileID: 3415670383106441306, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
       propertyPath: m_Name
       value: DiamondAmbient
-      objectReference: {fileID: 0}
-    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
-      propertyPath: EmissionModule.m_BurstCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7545767236287706278, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7736723748614028334, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
       propertyPath: m_LocalPosition.x
@@ -270,5 +321,10 @@ PrefabInstance:
 --- !u!4 &2512526333958107092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7736723748614028334, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
+  m_PrefabInstance: {fileID: 5296255296456659962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8663224956820035476 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3583142452176487534, guid: 3953e55221aa2c14dbc931b4c4115f20, type: 3}
   m_PrefabInstance: {fileID: 5296255296456659962}
   m_PrefabAsset: {fileID: 0}
