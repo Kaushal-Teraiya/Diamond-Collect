@@ -65,6 +65,9 @@
         },
         {
             "m_Id": "b9860e335d96416eb1718b5a75e10235"
+        },
+        {
+            "m_Id": "c07e7060b3f34e89949f0f1910908cbe"
         }
     ],
     "m_Keywords": [],
@@ -3773,6 +3776,9 @@
         },
         {
             "m_Id": "b9860e335d96416eb1718b5a75e10235"
+        },
+        {
+            "m_Id": "c07e7060b3f34e89949f0f1910908cbe"
         }
     ]
 }
@@ -6117,6 +6123,50 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "c07e7060b3f34e89949f0f1910908cbe",
+    "m_Guid": {
+        "m_GuidSerialized": "676895d5-8da9-4f16-b0de-ed9af1bd6944"
+    },
+    "promotedFromAssetID": "",
+    "promotedFromCategoryName": "",
+    "promotedOrdering": -1,
+    "m_Name": "FlowAngle",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "FlowAngle",
+    "m_DefaultReferenceName": "_FlowAngle",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
+    "m_Value": 0.0,
+    "m_FloatType": 0,
+    "m_LiteralFloatMode": false,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
 }
 
 {

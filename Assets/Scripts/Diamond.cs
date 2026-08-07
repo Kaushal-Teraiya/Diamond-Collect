@@ -4,6 +4,7 @@ public class Diamond : MonoBehaviour, IClickable
 {
     [SerializeField] private ParticleSystem ambientParticles;
     [SerializeField] private ParticleSystem pickupEffect;
+    [SerializeField] private ParticleSystem PlusOneEffect;
     [SerializeField] private Animator animator;
     [SerializeField] private Collider2D diamondCollider;
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -20,9 +21,12 @@ public class Diamond : MonoBehaviour, IClickable
 
     private void Collect()
     {
+        AudioManager.Instance.PlayDiamondPickup(); //Play Sfx
+        
         //Disable individual components so that pickup Burst effect can be played before destroying the whole object.
         ambientParticles.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         pickupEffect.Play();
+        PlusOneEffect.Play();
 
         diamondCollider.enabled = false;
         spriteRenderer.enabled = false;

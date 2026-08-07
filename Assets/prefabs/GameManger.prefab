@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1548071415320284170}
   - component: {fileID: 8143841146164647523}
-  - component: {fileID: 3115643712439049795}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -47,15 +46,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   maxTime: 30
   maxLives: 3
---- !u!114 &3115643712439049795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2574927748628763639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b67d3cc7354f694583371bb21d5a7f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InputHandler
